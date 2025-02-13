@@ -43,7 +43,7 @@
 ## 이미지
 
  이미지는 src와 똑같은 방식으로 구동할 수 있다.
- 먼저 !를 쓰고 [대체텍스트] (path/image.jpg) <br/>![메이플](https://www.pngwing.com/ko/free-png-nwxdu) <p>그럼 요런식으로 이미지가 표시된다.</p>
+ 먼저 !를 쓰고 [대체텍스트] (path/image.jpg) <br/>![메이플](https://scontent-gmp1-1.xx.fbcdn.net/v/t1.6435-9/44237321_1868605799926152_7827503473766694912_n.png?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Qv4x2E07NC8Q7kNvgE1ZR6o&_nc_oc=AdhVGSg7euCqMkE3hyVm1CN8p0lxd-uzPM7eKOc16anH-sy3ZFTV0dHqa36hYd6aIx4&_nc_zt=23&_nc_ht=scontent-gmp1-1.xx&_nc_gid=A_tA9MVX9Kx7DtYaMicWvRw&oh=00_AYDsPOlSgIX69C2wzY4-KjN7vug7N50SrjjGAFBq5c879w&oe=67D5CB85) <p>그럼 요런식으로 이미지가 표시된다.</p>
 
 ## 표
 
