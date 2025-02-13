@@ -43,7 +43,7 @@
 ## 이미지
 
  이미지는 src와 똑같은 방식으로 구동할 수 있다.
- 먼저 !를 쓰고 [대체텍스트] (path/image.jpg) <br/>![메이플](/src/assets/images/maple.jpeg) <p>그럼 요런식으로 이미지가 표시된다.</p>
+ 먼저 !를 쓰고 [대체텍스트] (path/image.jpg) <br/>![메이플](https://www.pngwing.com/ko/free-png-nwxdu) <p>그럼 요런식으로 이미지가 표시된다.</p>
 
 ## 표
 
