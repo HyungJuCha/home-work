@@ -1,0 +1,46 @@
+<!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 과제</title>
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/login/styles/login.css" />
+  </head>
+  <body>
+    <div>
+      <div class="logo"><img src="/src/login/naverlogo.svg" alt="네이버" /></div>
+       
+        <div class="id"><input type="text" id="idEmail" placeholder="아이디(이메일)"></input></div>
+        <div class="pw"><input type="text" id="passWord" placeholder="비밀번호"></input></div>
+      
+      <div class="logButton">
+        <button type="button" >로그인</button>
+      </div>
+     <label class="loginCheckbox">
+  <input type="checkbox" id="loginstate">
+  <span class="boxImage"></span>
+  로그인 상태 유지
+</label>
+      <!-- <div class="ipSec"><a href="./pages/ip-security.png" target="_blank">IP 보안</a> OFF</div> -->
+    </div>
+  </body>
+</html>
