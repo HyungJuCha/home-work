@@ -40,19 +40,19 @@ body {
 
 .logButton {
   margin: 20px;
+}
 
-  button {
-    font-size: 16px;
-    height: 45px;
-    color: #fff;
-    background: #03cf5d;
-    margin: 20px auto;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+.logButton button {
+  font-size: 16px;
+  height: 45px;
+  color: #fff;
+  background: #03cf5d;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -64,16 +64,21 @@ body {
 
 .cbox {
   .loginCheckbox {
-    border: 1px solid #333;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    cursor: pointer;
     margin: 20px;
     justify-content: flex-end;
     position: relative;
     max-height: 24px;
-
+    .loginbox {
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      input:focus + .boxImage {
+        outline: 2px solid #121212;
+      }
+    }
     input {
       position: absolute;
       opacity: 0;
@@ -96,6 +101,7 @@ body {
       height: 24px;
       padding-right: 5px;
       background: url("/src/login/unchecked.svg") no-repeat;
+      vertical-align: middle;
     }
   }
 
@@ -125,13 +131,12 @@ body {
         position: relative;
         display: inline-block;
         padding: 0 10px;
-        background-color: #ccc;
-        color: #fff;
-        border-radius: 10px;
+        color: #181818;
+        outline: none;
       }
 
       input:checked + .text {
-        background-color: #03cf5d;
+        color: #03cf5d;
       }
 
       .text:before {
@@ -140,6 +145,15 @@ body {
 
       input:checked + .text:before {
         content: "ON";
+      }
+
+      &:hover .text,
+      &:focus .text {
+        outline: 2px solid #121212;
+      }
+
+      input:focus + .text {
+        outline: 2px solid #121212;
       }
     }
   }
@@ -153,6 +167,7 @@ body {
 
       a {
         display: inline-block;
+        color: inherit;
       }
     }
 

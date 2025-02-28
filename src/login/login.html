@@ -28,19 +28,34 @@
   <body>
     <div>
       <div class="logo">
-        <img src="/src/login/naverlogo.svg" alt="네이버" />
+        <a href="https://www.naver.com">
+          <img src="/src/login/naverlogo.svg" alt="네이버" />
+        </a>
       </div>
 
-      <div class="id">
-        <input type="text" id="idEmail" placeholder="아이디(이메일)" />
-      </div>
-      <div class="pw">
-        <input type="password" id="passWord" placeholder="비밀번호" />
-      </div>
+      <form>
+        <div class="id">
+          <input
+            type="text"
+            id="idEmail"
+            placeholder="아이디(이메일)"
+            required
+          />
+        </div>
+        <div class="pw">
+          <input
+            type="password"
+            id="passWord"
+            placeholder="비밀번호"
+            required
+          />
+        </div>
 
-      <div class="logButton">
-        <button type="button">로그인</button>
-      </div>
+        <div class="logButton">
+          <button type="submit">로그인</button>
+        </div>
+      </form>
+
       <div class="cbox">
         <div class="loginCheckbox">
           <label for="loginstate" class="loginbox">
@@ -49,7 +64,12 @@
             로그인 상태 유지
           </label>
           <div class="ipSec">
-            <a href="./pages/ip-security.png" target="_blank">IP 보안</a>
+            <a
+              href="./pages/ip-security.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IP 보안</a
+            >
             <label for="switch">
               <input type="checkbox" id="switch" />
               <span class="text"></span>
