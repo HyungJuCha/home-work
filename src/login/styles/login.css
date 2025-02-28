@@ -13,6 +13,7 @@ body {
   text-align: center;
   margin: 100px 0 60px 0;
 }
+
 .id,
 .pw {
   display: flex;
@@ -21,12 +22,17 @@ body {
   height: 45px;
   border: 1px solid #dadada;
   background: #fff;
-  #idEmail,
-  #passWord {
-    font-size: 14px;
-    padding: 20px;
-  }
-  @media (min-width: 768px) {
+}
+
+#idEmail,
+#passWord {
+  font-size: 14px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .id,
+  .pw {
     inline-size: 500px;
     margin: 20px auto;
   }
@@ -34,6 +40,7 @@ body {
 
 .logButton {
   margin: 20px;
+
   button {
     font-size: 16px;
     height: 45px;
@@ -46,41 +53,39 @@ body {
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+  .logButton {
     inline-size: 500px;
     margin: 20px auto;
   }
 }
-.cbox {
-  border: 1px solid #333;
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 20px;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  max-height: 24px;
 
+.cbox {
   .loginCheckbox {
     border: 1px solid #333;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     cursor: pointer;
+    margin: 20px;
+    justify-content: flex-end;
+    position: relative;
+    max-height: 24px;
 
     input {
       position: absolute;
       opacity: 0;
     }
+
+    a {
+      display: none;
+      text-decoration: none;
+    }
+
     input:checked + .boxImage {
       background-image: url("/src/login/checked.svg");
-    }
-    @media (min-width: 768px) {
-      inline-size: 500px;
-      height: auto;
-      margin: 20px auto;
-      
-
     }
 
     .boxImage {
@@ -91,6 +96,68 @@ body {
       height: 24px;
       padding-right: 5px;
       background: url("/src/login/unchecked.svg") no-repeat;
+    }
+  }
+
+  .ipSec {
+    display: none;
+    align-items: center;
+    margin-left: 10px;
+
+    a {
+      margin-right: 10px;
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      color: #333;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .text {
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #ccc;
+        color: #fff;
+        border-radius: 10px;
+      }
+
+      input:checked + .text {
+        background-color: #03cf5d;
+      }
+
+      .text:before {
+        content: "OFF";
+      }
+
+      input:checked + .text:before {
+        content: "ON";
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .loginCheckbox {
+      inline-size: 500px;
+      height: auto;
+      margin: 20px auto;
+      justify-content: space-between;
+
+      a {
+        display: inline-block;
+      }
+    }
+
+    .ipSec {
+      display: flex;
     }
   }
 }

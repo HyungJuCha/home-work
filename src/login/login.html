@@ -27,22 +27,36 @@
   </head>
   <body>
     <div>
-      <div class="logo"><img src="/src/login/naverlogo.svg" alt="네이버" /></div>
-       
-        <div class="id"><input type="text" id="idEmail" placeholder="아이디(이메일)"></input></div>
-        <div class="pw"><input type="text" id="passWord" placeholder="비밀번호"></input></div>
-      
-      <div class="logButton">
-        <button type="button" >로그인</button>
+      <div class="logo">
+        <img src="/src/login/naverlogo.svg" alt="네이버" />
       </div>
-     <div class="cbox">
-       <label class="loginCheckbox">
-         <input type="checkbox" id="loginstate">
-         <span class="boxImage"></span>
-         로그인 상태 유지
-       </label>
-     </div>
-      <div class="ipSec"><a href="./pages/ip-security.png" target="_blank">IP 보안</a> OFF</div>
+
+      <div class="id">
+        <input type="text" id="idEmail" placeholder="아이디(이메일)" />
+      </div>
+      <div class="pw">
+        <input type="password" id="passWord" placeholder="비밀번호" />
+      </div>
+
+      <div class="logButton">
+        <button type="button">로그인</button>
+      </div>
+      <div class="cbox">
+        <div class="loginCheckbox">
+          <label for="loginstate" class="loginbox">
+            <input type="checkbox" id="loginstate" />
+            <span class="boxImage"></span>
+            로그인 상태 유지
+          </label>
+          <div class="ipSec">
+            <a href="./pages/ip-security.png" target="_blank">IP 보안</a>
+            <label for="switch">
+              <input type="checkbox" id="switch" />
+              <span class="text"></span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
