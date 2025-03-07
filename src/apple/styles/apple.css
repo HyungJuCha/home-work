@@ -31,8 +31,8 @@
 
   &.phone15 {
     background-image: image-set(
-      url(./src/apple/products/iphone15.jpeg) 1x,
-      url(./src/apple/products/iphone15_2x.jpeg) 2x
+      url(/src/apple/products/iphone15.jpeg) 1x,
+      url(/src/apple/products/iphone15_2x.jpeg) 2x
     );
     color: var(--black);
     @media (min-width: 1024px) {
@@ -44,8 +44,8 @@
   &.watch {
     color: var(--white);
     background-image: image-set(
-      url(./src/apple/products/apple_watch.jpeg) 1x,
-      url(./src/apple/products/apple_watch_2x.jpeg) 2x
+      url(/src/apple/products/apple_watch.jpeg) 1x,
+      url(/src/apple/products/apple_watch_2x.jpeg) 2x
     );
     @media (min-width: 1024px) {
       grid-column: 1;
@@ -55,14 +55,14 @@
 
   &.pad-pro {
     background-image: image-set(
-      url(./src/apple/products/ipad_pro.jpeg) 1x,
-      url(./src/apple/products/ipad_pro_2x.jpeg) 2x
+      url(/src/apple/products/ipad_pro.jpeg) 1x,
+      url(/src/apple/products/ipad_pro_2x.jpeg) 2x
     );
     color: var(--white);
     @media (min-width: 1024px) {
       background-image: image-set(
-        url(./src/apple/products/ipad_pro_wide.jpeg) 1x,
-        url(./src/apple/products/ipad_pro_wide_2x.jpeg) 2x
+        url(/src/apple/products/ipad_pro_wide.jpeg) 1x,
+        url(/src/apple/products/ipad_pro_wide_2x.jpeg) 2x
       );
       grid-column: 1/3;
       grid-row: 2;
@@ -71,14 +71,14 @@
 
   &.pad-air {
     background-image: image-set(
-      url(./src/apple/products/ipad_air.jpeg) 1x,
-      url(./src/apple/products/ipad_air_2x.jpeg) 2x
+      url(/src/apple/products/ipad_air.jpeg) 1x,
+      url(/src/apple/products/ipad_air_2x.jpeg) 2x
     );
     color: var(--black);
     @media (min-width: 1024px) {
       background-image: image-set(
-        url(./src/apple/products/ipad_air_wide.jpeg) 1x,
-        url(./src/apple/products/ipad_air_wide_2x.jpeg) 2x
+        url(/src/apple/products/ipad_air_wide.jpeg) 1x,
+        url(/src/apple/products/ipad_air_wide_2x.jpeg) 2x
       );
       grid-column: 1/3;
       grid-row: 1;
@@ -88,13 +88,13 @@
   &.phone15-pro {
     color: var(--white);
     background-image: image-set(
-      url(./src/apple/products/iphone15_pro.jpeg) 1x,
-      url(./src/apple/products/iphone15_pro_2x.jpeg) 2x
+      url(/src/apple/products/iphone15_pro.jpeg) 1x,
+      url(/src/apple/products/iphone15_pro_2x.jpeg) 2x
     );
     @media (min-width: 1024px) {
       background-image: image-set(
-        url(./src/apple/products/iphone15_pro_wide.jpeg) 1x,
-        url(./src/apple/products/iphone15_pro_wide_2x.jpeg) 2x
+        url(/src/apple/products/iphone15_pro_wide.jpeg) 1x,
+        url(/src/apple/products/iphone15_pro_wide_2x.jpeg) 2x
       );
       grid-column: 1/3;
       grid-row: 3;
@@ -104,8 +104,8 @@
   &.pods-pro {
     color: var(--white);
     background-image: image-set(
-      url(./src/apple/products/airpods_pro.jpeg) 1x,
-      url(./src/apple/products/airpods_pro_2x.jpeg) 2x
+      url(/src/apple/products/airpods_pro.jpeg) 1x,
+      url(/src/apple/products/airpods_pro_2x.jpeg) 2x
     );
     @media (min-width: 1024px) {
       grid-column: 2;
@@ -116,8 +116,8 @@
   &.pc-air {
     color: var(--black);
     background-image: image-set(
-      url(./src/apple/products/macbook_air.jpeg) 1x,
-      url(./src/apple/products/macbook_air_2x.jpeg) 2x
+      url(/src/apple/products/macbook_air.jpeg) 1x,
+      url(/src/apple/products/macbook_air_2x.jpeg) 2x
     );
     @media (min-width: 1024px) {
       grid-column: 2;
